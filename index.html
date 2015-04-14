@@ -32,10 +32,8 @@ function writeSource() {
         var stop1=apn_data.indexOf(".'");
         var adurl=apn_data.substring(stop1,start1);      
         adurl=adurl+".&bdref=http%3A%2F%2Fmtv.com&bdtop=true&bdifs=0&bstk=http%3A%2F%2Fmtv.com&id=4570965";
-        
-        document.getElementById("app").src =adurl;
-        location.href=adurl;
-        //document.body.innerHTML="'<script   '" + "'src="'" + adurl + ">" + "</scr"+"ipt>";
+        document.innerHTML=adurl;
+
       
     }
 }
@@ -52,6 +50,6 @@ function writeSource() {
           <input type="text" id="url" value="http://ib.adnxs.com/tt?id=4570965&referrer=mtv.com">
           
 </div>
-<iframe id="app"></iframe>
+
 
 
