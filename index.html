@@ -32,7 +32,7 @@ function writeSource() {
         var stop1=apn_data.indexOf(".'");
         var adurl=apn_data.substring(stop1,start1);      
         adurl=adurl+".&bdref=http%3A%2F%2Fmtv.com&bdtop=true&bdifs=0&bstk=http%3A%2F%2Fmtv.com&id=4331861";
-        document.body.innerHTML=adurl;
+        document.getElementById("app").src =adurl;
 
       
     }
@@ -50,6 +50,7 @@ function writeSource() {
           <input type="text" id="url" value="http://ib.adnxs.com/tt?id=4331861&referrer=mtv.com">
           
 </div>
+<iframe id="app"></iframe>
 
 
 
