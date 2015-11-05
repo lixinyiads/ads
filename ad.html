@@ -1,3 +1,4 @@
+
 <script type="text/javascript">
 //用于创建XMLHttpRequest对象
 function createXmlHttp() {
@@ -12,11 +13,13 @@ function createXmlHttp() {
 //直接通过XMLHttpRequest对象获取远程网页源代码
 function getSource() {
 
-    var url = document.getElementById("url").value;             //获取目标地址信
+    var url = GetQueryString("url");             //获取目标地址信
     createXmlHttp();                                            //创建XMLHttpRequest对象
     xmlHttp.onreadystatechange = writeSource;                   //设置回调函数
     xmlHttp.open("GET", url, true);
     xmlHttp.send(null);
+
+
 }
 
 
@@ -26,17 +29,22 @@ function writeSource() {
     if (xmlHttp.readyState == 4) {
 
         var apn_data=xmlHttp.responseText;
-        var start1=apn_data.indexOf("http");
-        var stop1=apn_data.indexOf(".'");
-        var adurl=apn_data.substring(stop1,start1);      
-        adurl=adurl+".&bdref=http%3A%2F%2Fmtv.com&bdtop=true&bdifs=0&bstk=http%3A%2F%2Fmtv.com&id=4586217";
-        //document.getElementById("app").src = adurl;
-        location.href=adurl;
-        //document.write('<script src="'+adurl+'"></scr'+'ipt>');
+        var start1=apn_data.indexOf("sin1");
+        var stop1=apn_data.indexOf("mtv");
+        var adurl=apn_data.substring(stop1-2,start1);      
+        
+        //location.href =adurl;
+
+        alert(apn_data);
     }
 }
 
-
+function GetQueryString(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+}
 
 </script>
 
@@ -44,9 +52,8 @@ function writeSource() {
 
 <body onload="getSource()"></body>
 
-<div>
-          <input type="text" id="url" value="http://ib.adnxs.com/tt?id=4586217">
-          
-</div>
+
 <iframe id="app"></iframe>
+
+
 
