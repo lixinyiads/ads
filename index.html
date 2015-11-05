@@ -4,7 +4,7 @@
 function createXmlHttp() {
     //根据window.XMLHttpRequest对象是否存在使用不同的创建方式
     if (window.XMLHttpRequest) {
-       xmlHttp = new XMLHttpRequest();                  //FireFox、Opera等浏览器支持的创建方式
+       xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");                  //FireFox、Opera等浏览器支持的创建方式
     } else {
        xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");//IE浏览器支持的创建方式
     }
