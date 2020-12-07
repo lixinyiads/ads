@@ -17,7 +17,7 @@
             var clen=c1.length/3;
             c2=c1.substring(0,clen );      
  
-            var clen2=c1.length/2;
+            var clen2=c1.length/1.5;
             c3=c1.substring(clen, clen2);
             c4=c1.substring(clen2,c1.length );
 
