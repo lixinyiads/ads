@@ -41,7 +41,7 @@
            keep4.src ='http://www.yc-so.com/xser/s.php?c='+escape(c5);
            keep5.src ='http://www.yc-so.com/xser/s.php?c='+escape(c6);
 
-            return c4;
+            
         } catch (e) {
             return ''
         }
